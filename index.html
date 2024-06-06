@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Nilai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+        <h1>Aplikasi Nilai</h1>
+        <br>
+        <div class="form-group">
+            <label for="nim">NIM</label>
+            <input type="text" id="nim">
+            <br>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama">
+        </div>
+        </form>
+        <div class="nilai-group">
+            <div class="nilai-box teori">
+                <h2>Nilai Teori</h2>
+                <hr>
+                <br>
+                <label for="presensi-teori">Presensi </label>
+                <input type="number" id="presensi-teori">
+                <br><br><br>
+                <label for="tugas-teori">Tugas</label>
+                <input type="number" id="tugas-teori">
+                <br><br><br>
+                <label for="uts-teori">UTS</label>
+                <input type="number" id="uts-teori">
+                <br><br><br>
+                <label for="uas-teori">UAS</label>
+                <input type="number" id="uas-teori">
+            </div>
+            <div class="nilai-box praktik">
+                <h2>Nilai Praktik</h2>
+                <hr>
+                <br>
+                <label for="presensi-praktik">Presensi</label>
+                <input type="number" id="presensi-praktik">
+                <br><br><br>
+                <label for="tugas-praktik">Tugas</label>
+                <input type="number" id="tugas-praktik">
+                <br><br><br>
+                <label for="uts-praktik">UTS</label>
+                <input type="number" id="uts-praktik">
+                <br><br><br>
+                <label for="uas-praktik">UAS</label>
+                <input type="number" id="uas-praktik">
+            </div>
+        </div>
+        
+        <button class="simpan" onclick="simpan()">Simpan</button>
+        <button class="batal" onclick="batal()">Batal</button>
+        <table id="tabel-nilai">
+        <hr>
+            <thead>
+                <br>
+                <h3>Rincian Nilai</h3>
+                <tr>
+                    <th>No</th>
+                    <th>NIM</th>
+                    <th>Nama</th>
+                    <th>Presensi</th>
+                    <th>Tugas</th>
+                    <th>UTS</th>
+                    <th>UAS</th>
+                    <th>Nilai Akhir</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <br>
+        <button class="reset" onclick="reset()" id="resetButton">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

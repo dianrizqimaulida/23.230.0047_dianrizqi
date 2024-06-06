@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lavender;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: lavender;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+label {
+    float: left;
+    width: 200px;
+    padding-right: 24px;
+}
+h1 {
+    text-align: center;
+}
+hr{
+    color: black;
+}
+.nilai-box h2{
+    text-align: center;
+}
+.form-group{
+    width: 35rem;
+}
+.form-group, .nilai-group {
+    margin-bottom: 20px;
+}
+
+.form-group label, .nilai-box label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: start;
+    margin-left: 4rem;
+    margin-right: -6rem;
+}
+.form-group input{
+    border-radius: 8px;
+}
+.nilai-box input{
+    border-radius: 8px;
+    float:inline-start;
+}
+
+.form-group input, .nilai-box input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.nilai-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nilai-box {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.nilai-box.teori {
+    background-color: azure;
+}
+
+.nilai-box.praktik {
+    background-color: antiquewhite;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    border-color: black;
+    font-weight: bold;
+    width: 7rem;
+
+}
+
+button.batal {
+    background-color: crimson;
+}
+
+button:hover {
+    opacity: 0.3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+thead {
+    background-color: lightskyblue;
+    color: black;
+}
+button.reset {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    width: 7rem;
+}
+button :active{
+    color: black;
+}
